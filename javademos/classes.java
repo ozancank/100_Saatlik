@@ -1,7 +1,7 @@
 public class classes {
     public static void main(String[] args) {
-        CustomerManager customerManager = new CustomerManager();
-        CustomerManager customerManager2 = new CustomerManager();
+        CustomerManager customerManager = new CustomerManager(new BaseLogger());
+        CustomerManager customerManager2 = new CustomerManager(new BaseLogger());
         customerManager = customerManager2;
         customerManager.Add();
         customerManager.Remove();
