@@ -38,6 +38,6 @@ public class Arrays {
             System.out.println(number);
         }
         System.out.println("Toplam = " + total);
-        System.out.println("En Buyuk = " + max);
+        System.out.println("En Bu yuk = " + max);
     }
 }
