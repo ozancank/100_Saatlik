@@ -8,5 +8,7 @@ public class packagesDemo {
         String isim = data.nextLine();
 
         System.out.println("Adiniz " + isim);
+
+        data.close();;
     }
 }
