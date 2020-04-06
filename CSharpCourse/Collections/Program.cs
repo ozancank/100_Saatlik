@@ -1,22 +1,19 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Collections
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             //ArrayList();
             //List();
-            Dictionary<string,string> dictionary=new Dictionary<string, string>();
-            dictionary.Add("book","kitap");
-            dictionary.Add("table","tablo");
-            dictionary.Add("computer","bilgisayar");
+            Dictionary<string, string> dictionary = new Dictionary<string, string>();
+            dictionary.Add("book", "kitap");
+            dictionary.Add("table", "tablo");
+            dictionary.Add("computer", "bilgisayar");
 
             //Console.WriteLine(dictionary["table"]);
             //Console.WriteLine(dictionary["glass"]);
@@ -45,7 +42,6 @@ namespace Collections
                 Console.WriteLine(city);
             }
 
-
             //List<Customer> customers = new List<Customer>();
             //customers.Add(new Customer { Id = 1, FirstName = "Engin" });
             //customers.Add(new Customer { Id = 2, FirstName = "Derin" });
@@ -55,7 +51,6 @@ namespace Collections
                 new Customer {Id = 1, FirstName = "Engin"},
                 new Customer {Id = 2, FirstName = "Derin"}
             };
-
 
             var customer2 = new Customer
             {
@@ -101,7 +96,6 @@ namespace Collections
             cities.Add("Ankara");
             cities.Add("Adana");
 
-
             cities.Add("İstanbul");
             cities.Add(1);
             cities.Add('A');
@@ -114,7 +108,7 @@ namespace Collections
         }
     }
 
-    class Customer
+    internal class Customer
     {
         public int Id { get; set; }
         public string FirstName { get; set; }

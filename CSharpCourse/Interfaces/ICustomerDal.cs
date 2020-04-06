@@ -1,19 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Interfaces
 {
-    interface ICustomerDal
+    internal interface ICustomerDal
     {
         void Add();
+
         void Update();
+
         void Delete();
     }
 
-    class SqlServerCustomerDal : ICustomerDal
+    internal class SqlServerCustomerDal : ICustomerDal
     {
         public void Add()
         {
@@ -31,7 +29,7 @@ namespace Interfaces
         }
     }
 
-    class OracleCustomerDal : ICustomerDal
+    internal class OracleCustomerDal : ICustomerDal
     {
         public void Add()
         {
@@ -49,7 +47,7 @@ namespace Interfaces
         }
     }
 
-    class MySqlCustomerDal : ICustomerDal
+    internal class MySqlCustomerDal : ICustomerDal
     {
         public void Add()
         {
@@ -67,12 +65,11 @@ namespace Interfaces
         }
     }
 
-    class CustomerManager
+    internal class CustomerManager
     {
         public void Add(ICustomerDal customerDal)
         {
             customerDal.Add();
         }
-    } 
-
+    }
 }

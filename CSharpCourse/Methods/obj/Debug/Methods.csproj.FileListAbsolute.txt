@@ -5,3 +5,9 @@ C:\Users\Engin\source\repos\CSharpCourse\Methods\obj\Debug\Methods.csprojResolve
 C:\Users\Engin\source\repos\CSharpCourse\Methods\obj\Debug\Methods.csproj.CoreCompileInputs.cache
 C:\Users\Engin\source\repos\CSharpCourse\Methods\obj\Debug\Methods.exe
 C:\Users\Engin\source\repos\CSharpCourse\Methods\obj\Debug\Methods.pdb
+D:\OneDrive\Program\83_Saatlik\CSharpCourse\Methods\bin\Debug\Methods.exe.config
+D:\OneDrive\Program\83_Saatlik\CSharpCourse\Methods\bin\Debug\Methods.exe
+D:\OneDrive\Program\83_Saatlik\CSharpCourse\Methods\bin\Debug\Methods.pdb
+D:\OneDrive\Program\83_Saatlik\CSharpCourse\Methods\obj\Debug\Methods.csproj.CoreCompileInputs.cache
+D:\OneDrive\Program\83_Saatlik\CSharpCourse\Methods\obj\Debug\Methods.exe
+D:\OneDrive\Program\83_Saatlik\CSharpCourse\Methods\obj\Debug\Methods.pdb

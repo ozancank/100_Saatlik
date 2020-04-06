@@ -1,25 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Constructors
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            CustomerManager customerManager=new CustomerManager(23);
+            CustomerManager customerManager = new CustomerManager(23);
             customerManager.List();
 
-            Product product = new Product {Id = 1, Name = "Laptop"};
-            Product product2=new Product(2,"Computer");
+            Product product = new Product { Id = 1, Name = "Laptop" };
+            Product product2 = new Product(2, "Computer");
 
-            EmployeeManager employeeManager=new EmployeeManager(new FileLogger());
+            EmployeeManager employeeManager = new EmployeeManager(new FileLogger());
             employeeManager.Add();
 
-            PersonManager personManager=new PersonManager("Product");
+            PersonManager personManager = new PersonManager("Product");
             personManager.Add();
 
             Teacher.Number = 10;
@@ -30,15 +26,14 @@ namespace Constructors
             Manager manager = new Manager();
             manager.DoSomething2();
 
-
             Console.ReadLine();
-
         }
     }
 
-    class CustomerManager
+    internal class CustomerManager
     {
-        private int _count=15;
+        private int _count = 15;
+
         public CustomerManager(int count)
         {
             _count = count;
@@ -46,43 +41,44 @@ namespace Constructors
 
         public CustomerManager()
         {
-            
         }
+
         public void List()
         {
-            Console.WriteLine("Listed {0} items",_count);
+            Console.WriteLine("Listed {0} items", _count);
         }
 
         public void Add()
         {
-         Console.WriteLine("Added!");   
+            Console.WriteLine("Added!");
         }
     }
 
-    class Product
+    internal class Product
     {
         public Product()
         {
-            
         }
 
         private int _id;
         private string _name;
-        public Product(int id,string name)
+
+        public Product(int id, string name)
         {
             _id = id;
             _name = name;
         }
+
         public int Id { get; set; }
         public string Name { get; set; }
     }
 
-    interface ILogger
+    internal interface ILogger
     {
         void Log();
     }
 
-    class DatabaseLogger : ILogger
+    internal class DatabaseLogger : ILogger
     {
         public void Log()
         {
@@ -90,7 +86,7 @@ namespace Constructors
         }
     }
 
-    class FileLogger : ILogger
+    internal class FileLogger : ILogger
     {
         public void Log()
         {
@@ -98,13 +94,15 @@ namespace Constructors
         }
     }
 
-    class EmployeeManager
+    internal class EmployeeManager
     {
         private ILogger _logger;
+
         public EmployeeManager(ILogger logger)
         {
             _logger = logger;
         }
+
         public void Add()
         {
             _logger.Log();
@@ -112,7 +110,7 @@ namespace Constructors
         }
     }
 
-    class BaseClass
+    internal class BaseClass
     {
         private string _entity;
 
@@ -120,17 +118,17 @@ namespace Constructors
         {
             _entity = entity;
         }
+
         public void Message()
         {
-            Console.WriteLine("{0} message",_entity);
+            Console.WriteLine("{0} message", _entity);
         }
     }
 
-    class PersonManager:BaseClass
+    internal class PersonManager : BaseClass
     {
-        public PersonManager(string entity):base(entity)
+        public PersonManager(string entity) : base(entity)
         {
-            
         }
 
         public void Add()
@@ -140,24 +138,24 @@ namespace Constructors
         }
     }
 
-    static class Teacher
+    internal static class Teacher
     {
         public static int Number { get; set; }
     }
 
-    static class Utilities
+    internal static class Utilities
     {
         static Utilities()
         {
-            
         }
+
         public static void Validate()
         {
             Console.WriteLine("Validation is done");
         }
     }
 
-    class Manager
+    internal class Manager
     {
         public static void DoSomething()
         {
@@ -169,7 +167,4 @@ namespace Constructors
             Console.WriteLine("Done 2");
         }
     }
-
-    
-
 }

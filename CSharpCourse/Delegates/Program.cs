@@ -1,21 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Delegates
 {
     public delegate void MyDelegate();
+
     public delegate void MyDelegate2(string text);
 
     public delegate int MyDelegate3(int number1, int number2);
 
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            CustomerManager customerManager=new CustomerManager();
+            CustomerManager customerManager = new CustomerManager();
             //customerManager.SendMessage();
             //customerManager.ShowAlert();
 
@@ -25,9 +22,9 @@ namespace Delegates
             myDelegate -= customerManager.SendMessage;
 
             MyDelegate2 myDelegate2 = customerManager.SendMessage2;
-            myDelegate2+= customerManager.ShowAlert2;
+            myDelegate2 += customerManager.ShowAlert2;
 
-            Matematik matematik=new Matematik();
+            Matematik matematik = new Matematik();
             MyDelegate3 myDelegate3 = matematik.Topla;
             myDelegate3 += matematik.Carp;
 

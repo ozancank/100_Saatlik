@@ -1,25 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace VirtualMethods
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            SqlServer sqlServer=new SqlServer();
+            SqlServer sqlServer = new SqlServer();
             sqlServer.Add();
-            MySql mySql=new MySql();
+            MySql mySql = new MySql();
             mySql.Add();
 
             Console.ReadLine();
         }
     }
 
-    class Database
+    internal class Database
     {
         public virtual void Add()
         {
@@ -32,7 +28,7 @@ namespace VirtualMethods
         }
     }
 
-    class SqlServer:Database
+    internal class SqlServer : Database
     {
         public override void Add()
         {
@@ -41,8 +37,7 @@ namespace VirtualMethods
         }
     }
 
-    class MySql:Database
+    internal class MySql : Database
     {
-        
     }
 }

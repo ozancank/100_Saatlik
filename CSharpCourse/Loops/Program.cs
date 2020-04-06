@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Loops
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             //ForLoop();
             //WhileLoop();
@@ -29,9 +25,9 @@ namespace Loops
         private static bool IsPrimeNumber(int number)
         {
             bool result = true;
-            for (int i = 2; i < number-1; i++)
+            for (int i = 2; i < number - 1; i++)
             {
-                if (number%i==0)
+                if (number % i == 0)
                 {
                     result = false;
                     i = number;
@@ -39,9 +35,10 @@ namespace Loops
             }
             return result;
         }
+
         private static void ForEachLoop()
         {
-            string[] students = new string[3] {"Engin", "Derin", "Salih"};
+            string[] students = new string[3] { "Engin", "Derin", "Salih" };
             foreach (var student in students)
             {
                 Console.WriteLine(student);

@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Conditionals
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             var number = 11;
             //if (number == 10)
@@ -50,18 +46,14 @@ namespace Conditionals
             //    Console.WriteLine("Number is less than 0 or greater than 200");
             //}
 
-            if (number<100)
+            if (number < 100)
             {
-                if (number>=90&&number<95)
+                if (number >= 90 && number < 95)
                 {
-                    
                 }
                 else
                 {
-                    
                 }
-
-
             }
 
             Console.ReadLine();

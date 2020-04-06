@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EntityFrameworkDemo
 {
@@ -21,7 +18,7 @@ namespace EntityFrameworkDemo
         {
             using (ETradeContext context = new ETradeContext())
             {
-                return context.Products.Where(p=>p.Name.Contains(key)).ToList();
+                return context.Products.Where(p => p.Name.Contains(key)).ToList();
             }
         }
 
@@ -29,15 +26,15 @@ namespace EntityFrameworkDemo
         {
             using (ETradeContext context = new ETradeContext())
             {
-                return context.Products.Where(p => p.UnitPrice>=price).ToList();
+                return context.Products.Where(p => p.UnitPrice >= price).ToList();
             }
         }
 
-        public List<Product> GetByUnitPrice(decimal min,decimal max)
+        public List<Product> GetByUnitPrice(decimal min, decimal max)
         {
             using (ETradeContext context = new ETradeContext())
             {
-                return context.Products.Where(p => p.UnitPrice >= min &&p.UnitPrice<=max).ToList();
+                return context.Products.Where(p => p.UnitPrice >= min && p.UnitPrice <= max).ToList();
             }
         }
 
@@ -80,6 +77,5 @@ namespace EntityFrameworkDemo
                 context.SaveChanges();
             }
         }
-
     }
 }

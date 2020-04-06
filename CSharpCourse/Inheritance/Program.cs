@@ -1,16 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Inheritance
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            Person[] persons=new Person[3]
+            Person[] persons = new Person[3]
             {
                 new Customer
                 {
@@ -29,23 +25,22 @@ namespace Inheritance
             }
 
             Console.ReadLine();
-            
         }
     }
 
-    class Person
+    internal class Person
     {
         public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
     }
 
-    class Customer:Person
+    internal class Customer : Person
     {
         public string City { get; set; }
     }
 
-    class Student : Person
+    internal class Student : Person
     {
         public string Department { get; set; }
     }

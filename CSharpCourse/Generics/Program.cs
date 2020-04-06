@@ -1,23 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Generics
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            Utilities utilities=new Utilities();
-            List<string> result = utilities.BuildList<string>("Ankara","İzmir","Adana");
+            Utilities utilities = new Utilities();
+            List<string> result = utilities.BuildList<string>("Ankara", "İzmir", "Adana");
             foreach (var item in result)
             {
                 Console.WriteLine(item);
             }
 
-            List<Customer> result2 = utilities.BuildList<Customer>(new Customer{FirstName = "Engin"},new Customer{FirstName = "Derin"});
+            List<Customer> result2 = utilities.BuildList<Customer>(new Customer { FirstName = "Engin" }, new Customer { FirstName = "Derin" });
 
             foreach (var customer in result2)
             {
@@ -27,7 +24,7 @@ namespace Generics
         }
     }
 
-    class Utilities
+    internal class Utilities
     {
         public List<T> BuildList<T>(params T[] items)
         {
@@ -35,50 +32,50 @@ namespace Generics
         }
     }
 
-    class Product:IEntity
+    internal class Product : IEntity
     {
-
-    }
-    interface IProductDal : IRepository<Product>
-    {
-
     }
 
-    class Customer:IEntity
+    internal interface IProductDal : IRepository<Product>
+    {
+    }
+
+    internal class Customer : IEntity
     {
         public string FirstName { get; set; }
     }
 
-    interface ICustomerDal : IRepository<Customer>
+    internal interface ICustomerDal : IRepository<Customer>
     {
         void Custom();
     }
 
-    interface IStudentDal:IRepository<Student>
+    internal interface IStudentDal : IRepository<Student>
     {
-        
     }
 
-    class Student:IEntity
+    internal class Student : IEntity
     {
-        
     }
 
-    interface IEntity
+    internal interface IEntity
     {
-        
     }
 
-    interface IRepository<T> where T:class,IEntity,new()
+    internal interface IRepository<T> where T : class, IEntity, new()
     {
         List<T> GetAll();
+
         T Get(int id);
+
         void Add(T entity);
+
         void Delete(T entity);
+
         void Update(T entity);
     }
 
-    class ProductDal : IProductDal
+    internal class ProductDal : IProductDal
     {
         public void Add(Product entity)
         {
@@ -106,7 +103,7 @@ namespace Generics
         }
     }
 
-    class CustomerDal : ICustomerDal
+    internal class CustomerDal : ICustomerDal
     {
         public void Add(Customer entity)
         {
@@ -138,7 +135,4 @@ namespace Generics
             throw new NotImplementedException();
         }
     }
-
-
-
 }

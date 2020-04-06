@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AbstractClasses
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Database database = new Oracle();
             database.Add();
@@ -22,7 +18,7 @@ namespace AbstractClasses
         }
     }
 
-    abstract class Database
+    internal abstract class Database
     {
         public void Add()
         {
@@ -32,7 +28,7 @@ namespace AbstractClasses
         public abstract void Delete();
     }
 
-    class SqlServer : Database
+    internal class SqlServer : Database
     {
         public override void Delete()
         {
@@ -40,7 +36,7 @@ namespace AbstractClasses
         }
     }
 
-    class Oracle:Database
+    internal class Oracle : Database
     {
         public override void Delete()
         {

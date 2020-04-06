@@ -1,40 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AccessModifiers
+﻿namespace AccessModifiers
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
         }
     }
 
-    class Customer
+    internal class Customer
     {
         protected int Id { get; set; }
 
         public void Save()
         {
-          
-            
         }
 
         public void Delete()
         {
-            
         }
     }
 
-    class Student:Customer
+    internal class Student : Customer
     {
         public void Save2()
         {
-           
-           
         }
     }
 

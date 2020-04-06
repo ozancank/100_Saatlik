@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Reflection
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             //DortIslem dortIslem=new DortIslem(2,3);
             //Console.WriteLine(dortIslem.Topla2());
@@ -23,24 +19,24 @@ namespace Reflection
 
             var instance = Activator.CreateInstance(tip, 6, 5);
 
-            MethodInfo methodInfo =  instance.GetType().GetMethod("Topla2");
-                
-            Console.WriteLine(methodInfo.Invoke(instance,null));
+            MethodInfo methodInfo = instance.GetType().GetMethod("Topla2");
+
+            Console.WriteLine(methodInfo.Invoke(instance, null));
 
             Console.WriteLine("------------------");
             var metodlar = tip.GetMethods();
 
             foreach (var info in metodlar)
             {
-                Console.WriteLine("Metod adı : {0}",info.Name);
+                Console.WriteLine("Metod adı : {0}", info.Name);
                 foreach (var parameterInfo in info.GetParameters())
                 {
-                    Console.WriteLine("Parametre : {0}",parameterInfo.Name);
+                    Console.WriteLine("Parametre : {0}", parameterInfo.Name);
                 }
 
                 foreach (var attribute in info.GetCustomAttributes())
                 {
-                    Console.WriteLine("Attribute Name : {0}",attribute.GetType().Name);
+                    Console.WriteLine("Attribute Name : {0}", attribute.GetType().Name);
                 }
             }
 
@@ -61,8 +57,8 @@ namespace Reflection
 
         public DortIslem()
         {
-            
         }
+
         public int Topla(int sayi1, int sayi2)
         {
             return sayi1 + sayi2;
@@ -85,11 +81,10 @@ namespace Reflection
         }
     }
 
-    public class MetodNameAttribute:Attribute
+    public class MetodNameAttribute : Attribute
     {
         public MetodNameAttribute(string name)
         {
-            
         }
     }
 }

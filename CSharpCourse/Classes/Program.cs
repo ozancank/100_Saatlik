@@ -1,24 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Classes
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            CustomerManager customerManager=new CustomerManager();
+            CustomerManager customerManager = new CustomerManager();
             customerManager.Add();
             customerManager.Update();
 
-            ProductManager productManager=new ProductManager();
+            ProductManager productManager = new ProductManager();
             productManager.Add();
             productManager.Update();
 
-            Customer customer=new Customer();
+            Customer customer = new Customer();
             customer.City = "Ankara";
             customer.Id = 1;
             customer.FirstName = "Engin";
@@ -26,7 +22,10 @@ namespace Classes
 
             Customer customer2 = new Customer
             {
-                Id = 2, City = "İstanbul", FirstName = "Derin", LastName = "Demiroğ"
+                Id = 2,
+                City = "İstanbul",
+                FirstName = "Derin",
+                LastName = "Demiroğ"
             };
 
             Console.WriteLine(customer2.FirstName);

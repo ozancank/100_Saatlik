@@ -1,25 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RecapDemo2
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            CustomerManager customerManager=new CustomerManager();
-            customerManager.Logger =new SmsLogger();
+            CustomerManager customerManager = new CustomerManager();
+            customerManager.Logger = new SmsLogger();
             customerManager.Add();
             Console.ReadLine();
         }
     }
 
-    class CustomerManager
+    internal class CustomerManager
     {
         public ILogger Logger { get; set; }
+
         public void Add()
         {
             Logger.Log();
@@ -27,7 +24,7 @@ namespace RecapDemo2
         }
     }
 
-    class DatabaseLogger:ILogger
+    internal class DatabaseLogger : ILogger
     {
         public void Log()
         {
@@ -35,7 +32,7 @@ namespace RecapDemo2
         }
     }
 
-    class FileLogger : ILogger
+    internal class FileLogger : ILogger
     {
         public void Log()
         {
@@ -43,7 +40,7 @@ namespace RecapDemo2
         }
     }
 
-    class SmsLogger : ILogger
+    internal class SmsLogger : ILogger
     {
         public void Log()
         {
@@ -51,7 +48,7 @@ namespace RecapDemo2
         }
     }
 
-    interface ILogger
+    internal interface ILogger
     {
         void Log();
     }

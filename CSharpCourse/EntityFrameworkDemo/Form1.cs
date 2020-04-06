@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace EntityFrameworkDemo
@@ -17,7 +10,8 @@ namespace EntityFrameworkDemo
             InitializeComponent();
         }
 
-        ProductDal _productDal=new ProductDal();
+        private ProductDal _productDal = new ProductDal();
+
         private void Form1_Load(object sender, EventArgs e)
         {
             LoadProducts();
@@ -46,7 +40,7 @@ namespace EntityFrameworkDemo
             LoadProducts();
             MessageBox.Show("Added!");
         }
-        
+
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             _productDal.Update(new Product

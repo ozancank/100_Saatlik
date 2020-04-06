@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace AdoNetDemo
@@ -16,7 +9,9 @@ namespace AdoNetDemo
         {
             InitializeComponent();
         }
-        ProductDal _productDal = new ProductDal();
+
+        private ProductDal _productDal = new ProductDal();
+
         private void Form1_Load(object sender, EventArgs e)
         {
             LoadProducts();
@@ -48,7 +43,7 @@ namespace AdoNetDemo
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            Product product=new Product
+            Product product = new Product
             {
                 Id = Convert.ToInt32(dgwProducts.CurrentRow.Cells[0].Value),
                 Name = tbxNameUpdate.Text,
@@ -58,7 +53,6 @@ namespace AdoNetDemo
             _productDal.Update(product);
             LoadProducts();
             MessageBox.Show("Updated!");
-
         }
 
         private void btnRemove_Click(object sender, EventArgs e)
