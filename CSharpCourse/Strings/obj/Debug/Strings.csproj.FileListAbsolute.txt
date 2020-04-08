@@ -5,3 +5,10 @@ C:\Users\Engin\source\repos\CSharpCourse\Strings\obj\Debug\Strings.csprojResolve
 C:\Users\Engin\source\repos\CSharpCourse\Strings\obj\Debug\Strings.csproj.CoreCompileInputs.cache
 C:\Users\Engin\source\repos\CSharpCourse\Strings\obj\Debug\Strings.exe
 C:\Users\Engin\source\repos\CSharpCourse\Strings\obj\Debug\Strings.pdb
+D:\OneDrive\Program\83_Saatlik\CSharpCourse\Strings\bin\Debug\Strings.exe.config
+D:\OneDrive\Program\83_Saatlik\CSharpCourse\Strings\bin\Debug\Strings.exe
+D:\OneDrive\Program\83_Saatlik\CSharpCourse\Strings\bin\Debug\Strings.pdb
+D:\OneDrive\Program\83_Saatlik\CSharpCourse\Strings\obj\Debug\Strings.csprojAssemblyReference.cache
+D:\OneDrive\Program\83_Saatlik\CSharpCourse\Strings\obj\Debug\Strings.csproj.CoreCompileInputs.cache
+D:\OneDrive\Program\83_Saatlik\CSharpCourse\Strings\obj\Debug\Strings.exe
+D:\OneDrive\Program\83_Saatlik\CSharpCourse\Strings\obj\Debug\Strings.pdb

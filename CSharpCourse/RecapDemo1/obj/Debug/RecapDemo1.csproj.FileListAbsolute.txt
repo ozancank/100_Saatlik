@@ -8,3 +8,13 @@ C:\Users\Engin\source\repos\CSharpCourse\RecapDemo1\obj\Debug\RecapDemo1.csproj.
 C:\Users\Engin\source\repos\CSharpCourse\RecapDemo1\obj\Debug\RecapDemo1.csproj.CoreCompileInputs.cache
 C:\Users\Engin\source\repos\CSharpCourse\RecapDemo1\obj\Debug\RecapDemo1.exe
 C:\Users\Engin\source\repos\CSharpCourse\RecapDemo1\obj\Debug\RecapDemo1.pdb
+D:\OneDrive\Program\83_Saatlik\CSharpCourse\RecapDemo1\bin\Debug\RecapDemo1.exe.config
+D:\OneDrive\Program\83_Saatlik\CSharpCourse\RecapDemo1\bin\Debug\RecapDemo1.exe
+D:\OneDrive\Program\83_Saatlik\CSharpCourse\RecapDemo1\bin\Debug\RecapDemo1.pdb
+D:\OneDrive\Program\83_Saatlik\CSharpCourse\RecapDemo1\obj\Debug\RecapDemo1.csprojAssemblyReference.cache
+D:\OneDrive\Program\83_Saatlik\CSharpCourse\RecapDemo1\obj\Debug\RecapDemo1.Form1.resources
+D:\OneDrive\Program\83_Saatlik\CSharpCourse\RecapDemo1\obj\Debug\RecapDemo1.Properties.Resources.resources
+D:\OneDrive\Program\83_Saatlik\CSharpCourse\RecapDemo1\obj\Debug\RecapDemo1.csproj.GenerateResource.cache
+D:\OneDrive\Program\83_Saatlik\CSharpCourse\RecapDemo1\obj\Debug\RecapDemo1.csproj.CoreCompileInputs.cache
+D:\OneDrive\Program\83_Saatlik\CSharpCourse\RecapDemo1\obj\Debug\RecapDemo1.exe
+D:\OneDrive\Program\83_Saatlik\CSharpCourse\RecapDemo1\obj\Debug\RecapDemo1.pdb
