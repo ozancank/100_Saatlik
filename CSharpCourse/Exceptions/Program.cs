@@ -55,7 +55,7 @@ namespace Exceptions
             {
                 Console.WriteLine(exception.Message);
             }
-            catch (Exception exception)
+            catch (Exception)
             {
             }
         }

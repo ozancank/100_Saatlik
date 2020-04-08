@@ -8,7 +8,7 @@ namespace Attributes
         {
             Customer customer = new Customer { Id = 1, LastName = "Demiroğ", Age = 32 };
             CustomerDal customerDal = new CustomerDal();
-            customerDal.Add(customer);
+            //customerDal.Add(customer);
             Console.ReadLine();
         }
     }
