@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron text-center">
+            <h1>Sayfam</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti perspiciatis ratione aspernatur
+                sapiente nam maiores est accusantium tempora, officia repudiandae? Eligendi deleniti vero voluptates
+                inventore possimus quo soluta, totam maiores!</p>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <h2>Kolon1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti perspiciatis!</p>
+            </div>
+            <div class="col-md-5">
+                <h2>Kolon2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti perspiciatis ratione aspernatur
+                    sapiente nam maiores est accusantium tempora, officia repudiandae? Eligendi deleniti vero voluptates
+                    inventore possimus quo soluta, totam maiores!</p>
+            </div>
+            <div class="col-md-5">
+                <h2>Kolon3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti perspiciatis ratione aspernatur
+                    sapiente nam maiores est accusantium tempora, officia repudiandae? Eligendi deleniti vero voluptates
+                    inventore possimus quo soluta, totam maiores!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="dropdown">
+                <button class="btn btn-success">Sepet</button>
+                <button type="button" class="btn btn-success dropdown-toggle dropdown-split"
+                    data-toggle="dropdown"></button>
+                <div class="dropdown-menu">
+                    <div class="dropdown-header">Sepet Elemanları</div>
+                    <a href="#" class="dropdown-item">Item 1</a>
+                    <a href="#" class="dropdown-item">Item 2</a>
+                    <a href="#" class="dropdown-item active">Item 3</a>
+                    <a href="#" class="dropdown-item disabled">Item 4</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">Satın Al</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <table class="table  table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <td>Id</td>
+                        <td>Ürün Adı</td>
+                        <td>Kategori</td>
+                        <td>Fiyat</td>
+                        <td>Stok Adedi</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-success">
+                        <td>1</td>
+                        <td>Laptop 1</td>
+                        <td>Bilgisayar</td>
+                        <td>3000</td>
+                        <td>3</td>
+                    </tr>
+                    <tr class="table-danger">
+                        <td>2</td>
+                        <td>Laptop 2</td>
+                        <td>Bilgisayar</td>
+                        <td>3000</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Laptop 3</td>
+                        <td>Bilgisayar</td>
+                        <td>3000</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-dark table-striped table-borderless table-hover">
+                <thead>
+                    <tr>
+                        <td>Id</td>
+                        <td>Ürün Adı</td>
+                        <td>Kategori</td>
+                        <td>Fiyat</td>
+                        <td>Stok Adedi</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Laptop 1</td>
+                        <td>Bilgisayar</td>
+                        <td>3000</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Laptop 2</td>
+                        <td>Bilgisayar</td>
+                        <td>3000</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Laptop 3</td>
+                        <td>Bilgisayar</td>
+                        <td>3000</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <form>
+                    <div class="form-group">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" class="form-control form-control-sm" id="firstName"
+                            placeholder="First Name" />
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" class="form-control form-control-lg" id="lastName" placeholder="Last Name" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="mail@domain" />
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" class="form-control" id="password" placeholder="Password" />
+                    </div>
+                    <div class="form-group">
+                        <label for="city">City:</label>
+                        <select class="form-control" id="city">
+                            <option>Ankara</option>
+                            <option>İstanbul</option>
+                            <option>İzmir</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="bio">About:</label>
+                        <textarea rows="3" class="form-control" id="bio"></textarea>
+                    </div>
+                    <div class="form-check disabled">
+                        <label class="form-check-label" for="term">
+                            <input type="checkbox" class="form-check-input" id="term" />I accept the terms:
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="radio">
+                            <input type="radio" class="form-check-input" name="radio" id="radio" />Option
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="radio">
+                            <input type="radio" class="form-check-input" name="radio" id="radio" />Option
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="radio">
+                            <input type="radio" class="form-check-input" name="radio" id="radio" />Option
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-success">Send</button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <ul class="list-group">
+                    <li class="list-group-item">O</li>
+                    <li class="list-group-item active">Z</li>
+                    <li class="list-group-item">A</li>
+                    <li class="list-group-item">N</li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action disabled">C</a>
+                    <a href="#" class="list-group-item list-group-item-action active">A</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-warning">N</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+</html>
