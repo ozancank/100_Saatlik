@@ -47,6 +47,22 @@
       "categoryId": 2,
       "description": "A4 Tech",
       "imageUrl": "https://via.placeholder.com/286x180.png"
+    },
+    {
+      "name": "Telefon",
+      "description": "IPhone 8 telefon",
+      "imageUrl": "https://via.placeholder.com/286x180.png",
+      "price": "5000",
+      "categoryId": "2",
+      "id": 3
+    },
+    {
+      "name": "Buzdolabı",
+      "description": "Arçelik",
+      "imageUrl": "https://via.placeholder.com/200x200.png",
+      "price": "2000",
+      "categoryId": "2",
+      "id": 4
     }
   ],
   "categories": [
